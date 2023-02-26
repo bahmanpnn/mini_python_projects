@@ -14,7 +14,7 @@ def insert_data(con,curs,data):
 def process_data_for_human(data):
     output_dic={'city':data['name'],'datetime':time.ctime(int(data['dt'])),'temp':data['main']['temp'],'humidity':data['main']['humidity']}
     return output_dic
-def get_weather_data(city='tehran',appid='ac106036288672c10e9389e4b5a30f38'):
+def get_weather_data(city='tehran',appid=''):
   
     URL =f"https://api.openweathermap.org/data/2.5/weather"
     PARAMS = {'q':city,'appid':appid}
@@ -34,7 +34,7 @@ while True:
 
 #way2
 
-# app_id='ac106036288672c10e9389e4b5a30f38'
+# app_id=''
 # city='gorgan'
 # # api-endpoint
 # # URL =f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={app_id}'
