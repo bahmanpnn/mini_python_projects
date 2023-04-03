@@ -13,7 +13,7 @@ for i in range(0,50):
     people.append(100)
 
 #this loop is for round of beshkan and click that is 1000 round
-for beshkan in range(0,1000):
+for beshkan in range(0,10000):
     #this loop is for choose random one person from 50 
     for person in range(0,50):
         person2=random.randrange(0,50)
@@ -34,5 +34,5 @@ for beshkan in range(0,1000):
 #now we want to user chart to show money of people
 import matplotlib.pyplot as plt
 #first field of bar is width of our chart and next one is height of our chart that is money of people
-print(plt.bar(range(0,50),sorted(people)))
+plt.bar(range(0,50),sorted(people))
 # print(plt.bar(range(0,50),sorted(people,reverse=True)))
